@@ -68,7 +68,7 @@ $(document).ready(function () {
     });
 
     // skill class -> numeric percentage mapping
-    const skillMap = { html: 90, css: 80, bootstrap: 75, javascript: 70, c: 85 };
+    //const skillMap = { html: 90, css: 80, bootstrap: 75, javascript: 70, c: 85 };
 
     // Insert percent labels (initially 0%) next to each skill info
     document.querySelectorAll('.skills .bar').forEach(bar => {
