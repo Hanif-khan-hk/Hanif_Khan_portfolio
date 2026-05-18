@@ -1,0 +1,88 @@
+.section {
+  padding: 6rem 0;
+  border-top: var(--border-width) solid var(--border-color);
+}
+
+.section-title {
+  display: inline-block;
+  margin-bottom: 4rem;
+  background-color: var(--accent);
+  color: #111;
+  transform: rotate(-2deg);
+}
+
+.section-title h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #111;
+}
+
+.biography-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.bio-info h3, .bio-education h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: var(--border-width) solid var(--border-color);
+}
+
+.bio-info p {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.bio-list {
+  list-style: none;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: var(--border-width) solid var(--border-color);
+}
+
+.bio-list li {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.bio-list strong {
+  display: inline-block;
+  width: 100px;
+  color: var(--accent);
+}
+
+.timeline-item {
+  margin-bottom: 2.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+  border-left: var(--border-width) solid var(--accent);
+}
+
+.timeline-date {
+  display: inline-block;
+  background-color: var(--surface-color);
+  padding: 0.3rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.timeline-item h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-item p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 992px) {
+  .biography-grid {
+    grid-template-columns: 1fr;
+  }
+}
